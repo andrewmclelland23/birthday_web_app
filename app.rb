@@ -7,5 +7,7 @@ class Birthday < Sinatra::Base
     erb(:homepage)
   end
 
-  
+  post '/calculate' do
+    "It's your Birthday today! Happy Birthday Andy!"
+  end
 end
