@@ -1,9 +1,11 @@
 require 'sinatra/base'
 
+# Defining Birthday class
 class Birthday < Sinatra::Base
 
-get '/' do
-  'Hello! Please enter your birthday below...'
-end
+  get '/' do
+    erb(:homepage)
+  end
 
+  
 end
