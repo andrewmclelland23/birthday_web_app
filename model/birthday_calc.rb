@@ -18,7 +18,8 @@ class BirthdayCalc
   private
 
   def bday_this_year(date)
-    @date_class.strptime(date, '%d/%m')
+    bday = @date_class.strptime(date)
+    @date_class.new(@date_class.today.year, bday.month, bday.day)
   end
 
   def days_to_bday(bday, date)
