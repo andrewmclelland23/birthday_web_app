@@ -8,6 +8,10 @@ class Birthday < Sinatra::Base
   end
 
   post '/calculate' do
-    "It's your Birthday today! Happy Birthday Andy!"
+    redirect('/birthday_today')
+  end
+
+  get '/birthday_today' do
+    erb(:birthday_message)
   end
 end
