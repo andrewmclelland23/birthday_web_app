@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require_relative './model/birthday_calc.rb'
+require_relative './lib/birthday_calc.rb'
 # Defining Birthday class
 class Birthday < Sinatra::Base
 
